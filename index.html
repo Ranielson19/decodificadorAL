@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>decodificado</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&family=Space+Mono&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container__header">
+            <div class="header">
+                <img class="logo" src="./assets/imagens_svg/logo.svg">
+            </div>
+        </div>
+    </header>
+    <main>
+        <article class="container">
+            <section class="left" id="left">
+                <textarea class="inputtextarea" id="textoInput" placeholder="Digite seu texto" autofocus></textarea>
+                <div class="content_button">
+                    <span class="info">
+                        <img src="./assets/imagens_svg/advertencia.svg" alt="advertencia" />
+                        Apenas letras minúsculas e sem acento.
+                    </span>
+                    <div class="button">
+                        <button id="Criptografar" class="Criptografar">Criptografar</button>
+                        <button id="Descriptografar" class="Descriptografar">Descriptografar</button>
+                    </div>
+                </div>
+            </section>
+            <section class="right" id="rigth">
+                <img id="nenhuma" class="nenhuma" src="./assets/imagens_svg/nenhuma.svg"
+                    alt="Nenhuma mensagem encontrada. Digite um texto que você deseja criptografar ou descriptografar.">
+                <textarea id="textoNenhuma" class="textoNenhuma" placeholder="Nenhuma mensagem encontrada"></textarea>
+                <p id="textoInfo" class="info">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                <button class="copiar ocultar" id="copiar">Copiar</button>
+            </section>
+        </article>
+    </main>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
